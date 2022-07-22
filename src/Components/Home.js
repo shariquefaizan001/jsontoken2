@@ -14,7 +14,7 @@ export default function Home() {
   }, [])
   return (
     <>
-      <div>my page</div>
+      <div>welcome all of you </div>
       <div>
         {
           state && JSON.stringify(state)}

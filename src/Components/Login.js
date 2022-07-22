@@ -91,7 +91,7 @@ function Firstpage() {
             <div className="uiform">
 
               <div className="feild">
-                <label > <h5>EMAILS</h5>  </label><br></br>
+                <label > <h5>EMAIL</h5>  </label><br></br>
                 <input className=' inp' type="text" name="Email" placeholder=' Enter Email  id ' onChange={handleChange}
                   value={formValues.Email} />
               </div>
@@ -100,7 +100,7 @@ function Firstpage() {
 
 
               <div className="feild">
-                <label ><h5 className='downcc '>PASSWORD</h5> </label><br></br>
+                <label ><h5 className='downcc '>PASSWORDD</h5> </label><br></br>
                 <input className='inp' type="password"
                   name="password" placeholder='Enter Password'
                   onChange={handleChange}
@@ -121,7 +121,7 @@ function Firstpage() {
 
               
               
-              <button className='button'> Signup</button>
+              <button className='button'> Signup now</button>
 
 
             </div>
