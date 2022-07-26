@@ -5,16 +5,23 @@ export default function Home() {
 
   useEffect(() => {
     async function getData() {
-      const res = await fetch("http://localhost:8080");
-      const data = await res.json();
-      console.log(res);
-      setState(data)
+      try {
+        const res = await fetch("http://localhost:5000/api", {
+          method: "POST"
+        });
+        const data = await res.json();
+        console.log(res);
+        setState(data)
+      } catch (error) {
+        console.log(error)
+        setState("Error Occurred")
+      }
     }
     getData()
   }, [])
   return (
     <>
-      <div>welcome all of you </div>
+      <div>welcome  home page </div>
       <div>
         {
           state && JSON.stringify(state)}
